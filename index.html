@@ -1,19 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <!-- tailwind and daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "p-color": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font family -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/7d5a80a866.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-lato">
+    <!-- nav -->
 
+    <header>
+      <!-- navbar section -->
+      <nav
+        class="bg-p-color rounded-full max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10"
+      >
+        <div class="navbar">
+          <div class="flex-1 text-white hidden lg:block">
+            <a class="btn btn-ghost normal-case text-base">Home</a>
+            <a class="btn btn-ghost normal-case text-base">About</a>
+            <a class="btn btn-ghost normal-case text-base">Fruits</a>
+            <a class="btn btn-ghost normal-case text-base">Shop</a>
+          </div>
+          <div class="flex justify-center gap-4 items-center mr-40">
+            <img src="./images/logo.png" class="w-10" />
+            <h3 class="text-xl lg:text-4xl font-bold text-white">
+              Fruit Burst
+            </h3>
+          </div>
+          <div class="flex-none gap-2">
+            <div class="form-control hidden md:block lg:block">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered w-24 md:w-auto rounded-full"
+              />
+            </div>
+            <img
+              src="./images/Vector.png"
+              class="relative right-10 hidden md:block lg:block"
+            />
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img class="block lg:hidden" src="./images/Frame.png" />
+                </div>
+              </label>
+              <ul
+                tabindex="0"
+                class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a class="btn btn-ghost normal-case text-xl">Home</a>
+                  <a class="btn btn-ghost normal-case text-xl">About</a>
+                  <a class="btn btn-ghost normal-case text-xl">Fruits</a>
+                  <a class="btn btn-ghost normal-case text-xl">Shop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-
+      <!-- modal section -->
     </main>
-    <footer>
-        
+    <!-- footer section -->
+    <footer
+      class="footer footer-center p-10 bg-black text-base-content rounded"
+    >
+      <div class="flex justify-center items-center">
+        <img src="./images/logo.png" class="w-14" />
+        <h3 class="text-xl lg:text-4xl font-bold text-white">Fruit Burst</h3>
+      </div>
+      <div
+        class="grid grid-cols-4 md:grid-cols-6 m-x-2 gap-14 text-sm lg:text-lg font-semibold text-white"
+      >
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">Fruits</a>
+        <a class="link link-hover flex flex-1">Support</a>
+        <a class="link link-hover flex flex-1">Account</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-10 justify-center items-center">
+          <a><img src="./images/twitter 1.png" class="w-10" /></a>
+          <a><img src="./images/facebook 1.png" class="w-10" /></a>
+          <a><img src="./images/Group 49.png" class="w-10" /></a>
+          <a><img src="./images/linkedin 1.png" class="w-10" /></a>
+          <a><img src="./images/instagram 1.png" class="w-10" /></a>
+          <a><img src="./images/apple 1.png" class="w-10" /></a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
