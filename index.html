@@ -18,6 +18,8 @@
           extend: {
             colors: {
               "p-color": "#F85559",
+              "t-color": "#121212",
+              
             },
           },
         },
@@ -48,18 +50,18 @@
     <header>
       <!-- navbar section -->
       <nav
-        class="bg-p-color rounded-full max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10"
+        class="bg-white md:bg-p-color rounded-full max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 "
       >
         <div class="navbar">
-          <div class="flex-1 text-white hidden lg:block">
+          <div class="flex-1 text-black md:text-white hidden lg:block">
             <a class="btn btn-ghost normal-case text-base">Home</a>
             <a class="btn btn-ghost normal-case text-base">About</a>
             <a class="btn btn-ghost normal-case text-base">Fruits</a>
             <a class="btn btn-ghost normal-case text-base">Shop</a>
           </div>
-          <div class="flex justify-center gap-4 items-center mr-40">
-            <img src="./images/logo.png" class="w-10" />
-            <h3 class="text-xl lg:text-4xl font-bold text-white">
+          <div class="flex justify-center gap-2 items-center mr-40 ">
+            <img src="./images/logo.png" class="w-8 md:w-10 " />
+            <h3 class="text-xl  lg:text-4xl font-bold text-black  md:text-white ">
               Fruit Burst
             </h3>
           </div>
@@ -96,9 +98,360 @@
           </div>
         </div>
       </nav>
+      <!-- slider section -->
+      <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        
+        <div class="carousel">
+          <!-- slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+              
+     
+        <!-- container -->
+        <div class="hidden lg:block">
+          <div class="flex justify-around gap-4 items-center text-center rounded-lg shadow-xl bg-white max-w-[1000px] relative left-16 bottom-20 p-3 ">
+         <div>
+           <img src="./images/fruit1.png" alt="">
+           <h4>Strawberry</h4>
+         </div>
+         <div>
+           <img src="./images/fruit2.png" alt="">
+           <h4>Orange</h4>
+         </div>
+         <div>
+           <img src="./images/fruit3.png" alt="">
+           <h4>Mango</h4>
+         </div>
+         <div>
+           <img src="./images/fruit4.png" alt="">
+           <h4>Strawberry</h4>
+         </div>
+         <div>
+           <img src="./images/fruit5.png" alt="">
+           <h4>Mango</h4>
+         </div>
+     </div> 
+       </div>
+      
+      </section>
+     
+
+
     </header>
     <main>
+      <!-- timer section -->
+      <section max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10>
+    
+      <div class="flex justify-between items-center flex-col md:flex-row">
+<div class=" text-center md:text-start m-4 md:w-1/3 md:ml-24">
+  <h3 class="text-4xl font-extrabold">Deal of the day</h3>
+  <p class="text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+<div class=" md:w-1/3">
+  <div class="grid grid-flow-col gap-5 text-center auto-cols-max text-2xl font-extrabold">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:15;"></span>:
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:10;"></span>:
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:24;"></span>:
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:56;"></span>
+      </span>
+      sec
+    </div>
+  </div>
+</div>
+      </div>
+      </section>
       <!-- modal section -->
+
+      
+       
+          <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div class="grid justify-center items-center text-center gap-10 m-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card-1 -->
+            <div class="card bg-base-100 p-9 border border-gray-400">
+              <figure><img class="w-24" src="./images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body">
+<h2>12.90$ - 18.85$</h2>
+<hr>
+                  <p>Apples</p>
+                  <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                  </div>
+                  
+      <!-- pop up -->
+<div>
+<button class="btn btn-ghost" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_1" class="modal">
+<form method="dialog" class="modal-box">
+  <div class="flex justify-center flex-col px-16 py-10 items-center">
+    <img src="./images/fruit8.png" alt="">
+  <h3 class="font-bold text-lg">Red Dragon</h3>
+  <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  <div class="modal-action ">
+    <!-- if there is a button in form, it will close the modal -->
+    <button class="btn btn-acive border border-p-color text-p-color">Close</button>
+    <button class="btn bg-p-color text-white">Buy Now</button>
+  </div>
+  </div>
+</form>
+</dialog>
+</div>
+              </div>
+          </div>
+                <!-- card-2 -->
+            <div class="card bg-base-100 p-9 border border-gray-400">
+              <figure><img class="w-28" src="./images/fruit7.png" alt="Shoes" /></figure>
+              <div class="card-body">
+<h2>12.90$ - 18.85$</h2>
+<hr>
+                  <p>Orange</p>
+                  <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                  </div>
+                  
+      <!-- pop up -->
+<div>
+<button class="btn btn-ghost" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+<form method="dialog" class="modal-box">
+  <div class="flex justify-center flex-col px-16 py-10 items-center">
+    <img src="./images/fruit7.png" alt="">
+  <h3 class="font-bold text-lg">Red Dragon</h3>
+  <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  <div class="modal-action ">
+    <!-- if there is a button in form, it will close the modal -->
+    <button class="btn btn-acive border border-p-color text-p-color">Close</button>
+    <button class="btn bg-p-color text-white">Buy Now</button>
+  </div>
+  </div>
+</form>
+</dialog>
+</div>
+              </div>
+          </div>
+                <!-- card-3 -->
+            <div class="card bg-base-100 p-9 border border-gray-400">
+              <figure><img class="w-28" src="./images/fruit8.png" alt="Shoes" /></figure>
+              <div class="card-body">
+<h2>12.90$ - 18.85$</h2>
+<hr>
+                  <p>Red Dragon</p>
+                  <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                  </div>
+                  
+      <!-- pop up -->
+<div>
+<button class="btn btn-ghost" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_3" class="modal">
+<form method="dialog" class="modal-box">
+  <div class="flex justify-center flex-col px-16 py-10 items-center">
+    <img src="./images/fruit8.png" alt="">
+  <h3 class="font-bold text-lg">Red Dragon</h3>
+  <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  <div class="modal-action ">
+    <!-- if there is a button in form, it will close the modal -->
+    <button class="btn btn-acive border border-p-color text-p-color">Close</button>
+    <button class="btn bg-p-color text-white">Buy Now</button>
+  </div>
+  </div>
+</form>
+</dialog>
+</div>
+              </div>
+          </div>
+                <!-- card-4 -->
+            <div class="card bg-base-100 p-9 border border-gray-400">
+              <figure><img class="w-28" src="./images/fruit9.png" alt="Shoes" /></figure>
+              <div class="card-body">
+<h2>12.90$ - 18.85$</h2>
+<hr>
+                  <p>Banana</p>
+                  <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-p-color" />
+                  </div>
+                  
+      <!-- pop up -->
+<div>
+<button class="btn btn-ghost" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_4" class="modal">
+<form method="dialog" class="modal-box">
+  <div class="flex justify-center flex-col px-16 py-10 items-center">
+    <img src="./images/fruit8.png" alt="">
+  <h3 class="font-bold text-lg">Red Dragon</h3>
+  <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  <div class="modal-action ">
+    <!-- if there is a button in form, it will close the modal -->
+    <button class="btn btn-acive border border-p-color text-p-color">Close</button>
+    <button class="btn bg-p-color text-white">Buy Now</button>
+  </div>
+  </div>
+</form>
+</dialog>
+</div>
+              </div>
+          </div>
+
+            </div>
+            <div class="flex justify-center items-center">
+              <button class="btn bg-p-color text-white">Shop All</button>
+            </div>
+          </section>
+
+<!-- meet section -->
+
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 ">
+  <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+        <!-- container -->
+        <div class="grid grid-cols-1 md:grid-cols-82 lg:grid-cols-4 justify-center items-center w-full gap-8 ">
+          <!-- member1 -->
+<div>
+<div>
+<img src="./images/member1.png" class="felx justify-center items-center">
+<h2>Awlad Hossain</h2>
+<h4>Fruits Expert</h4>
+</div>
+<div class="flex justify-center items-center gap-2">
+<img src="./images/f.png" alt="" srcset="">
+<img src="./images/t.png" alt="" srcset="">
+<img src="./images/i.png" alt="" srcset="">
+</div>
+</div>
+          <!-- member2 -->
+<div>
+<div>
+<img src="./images/member1.png" alt="">
+<h2>Awlad Hossain</h2>
+<h4>Fruits Expert</h4>
+</div>
+<div class="flex justify-center items-center gap-2">
+<img src="./images/f.png" alt="" srcset="">
+<img src="./images/t.png" alt="" srcset="">
+<img src="./images/i.png" alt="" srcset="">
+</div>
+</div>
+          <!-- member3 -->
+<div>
+<div>
+<img src="./images/member1.png" alt="">
+<h2>Awlad Hossain</h2>
+<h4>Fruits Expert</h4>
+</div>
+<div class="flex justify-center items-center gap-2">
+<img src="./images/f.png" alt="" srcset="">
+<img src="./images/t.png" alt="" srcset="">
+<img src="./images/i.png" alt="" srcset="">
+</div>
+</div>
+          <!-- member4 -->
+<div>
+<div>
+<img src="./images/member1.png" alt="">
+<h2>Awlad Hossain</h2>
+<h4>Fruits Expert</h4>
+</div>
+<div class="flex justify-center items-center gap-2">
+<img src="./images/f.png" alt="" srcset="">
+<img src="./images/t.png" alt="" srcset="">
+<img src="./images/i.png" alt="" srcset="">
+</div>
+</div>
+
+
+         
+        </div>
+      
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- choose section -->
+
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-extrabold">Why Choose Us</h2>
+    <p class="text-justify">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <!-- container -->
+
+</section>
+
+
+
+  
+    
     </main>
     <!-- footer section -->
     <footer
